@@ -1,0 +1,29 @@
+.movies{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+    margin: auto;
+    gap: 100px;
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px 10px  orange;
+    border-radius: 5px;
+    padding: 10px;
+}
+img{
+    height:250px;
+    width:auto;
+}
+h2{
+    font-size: 24px;
+    color:blue;
+    text-align: center;
+}
+.mov{
+    text-align: center;
+    color:brown;
+    font-size: 30px;
+    font-weight: bold;
+}

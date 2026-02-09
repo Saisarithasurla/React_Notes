@@ -1,0 +1,27 @@
+.head{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color:white;
+  padding:40px;
+  margin:0
+  }
+body{
+  background-color: black;
+}
+.row{
+  display: flex;
+  gap:75px;
+  padding: auto;
+}
+.str{
+  color:yellow;
+  font-weight: bold;
+}
+.my{
+  color:white;
+  font-size: 20px;;
+}
+.imagee{
+  width:300px;
+}

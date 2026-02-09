@@ -1,0 +1,53 @@
+body{
+  background:linear-gradient(#36D1DC,#5B86E5);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.container{
+  font-size: 48px;
+  color:red;
+  font-weight: bold;
+  align-items:center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  height:40px;
+  gap:15px;
+}
+.head{
+  color:rgb(255, 0, 191);
+  font-size: 18px;
+  font-weight: bold;
+}
+.head:hover{
+  color:green;
+
+}
+.hea{
+  color:rgb(255, 0, 191);
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+.hea:hover{
+  color:green;
+}
+.te{
+  color:yellow;
+  font-size: 58px;
+  font-weight: bold;
+}
+.ti{
+  color:purple;
+  font-weight: bold;
+  font-size: 56px;
+}
+input{
+  height:40px;
+  width:270px;
+  font-size: 22px;
+}

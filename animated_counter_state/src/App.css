@@ -1,0 +1,47 @@
+body{
+  background: linear-gradient(#00416a,#799f0c,#FFE000);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 54px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.container{
+  box-shadow: 0 0 0 6px orange;
+  width:300px;
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px;
+  margin:70px;
+  
+}
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  
+}
+.para{
+  font-size: 70px;
+  font-weight: bold;
+  color:black;
+}
+.btn{
+  display: flex;
+  gap:20px;
+  justify-content: center;
+}
+h2{
+  color:blue;
+}
+.btn button:hover{
+  background-color: pink;
+}
+
+
+
+
