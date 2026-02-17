@@ -7,7 +7,9 @@ import About from './components/pages/About'
 import Projects from './components/pages/Projects'
 import Skills from './components/pages/Skills'
 import Contact from './components/pages/Contact'
+import Certifications from './components/pages/Certifications'
 import Pagenotfound from './components/pages/Pagenotfound'
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path='/about' element={<About />}/>
           <Route path='/projects' element={<Projects />}/>
           <Route path='/skills' element={<Skills />}/>
+          <Route path='/certifications' element={<Certifications/>}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='*' element={<Pagenotfound />}/>
 				

@@ -4,11 +4,7 @@ function About() {
   return (
  
     <div className='ml-20 mr-20 bg-emerald-400 pb-28 pr-20 pl-20 '>
-        <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-      >
+        <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
        <h1 className='text-6xl text-red-800 text-center p-8 font-bold mt-4'>About Me </h1>
         <div>
             <p className=' text-2xl text-center'>I’m Surla Sai Saritha, a Mechanical Engineering graduate who transitioned into software development. My journey into programming started with a curiosity for solving problems with code, which quickly grew into a passion for building web applications that make an impact.</p> 
@@ -24,5 +20,4 @@ function About() {
     
   )
 }
-
 export default About

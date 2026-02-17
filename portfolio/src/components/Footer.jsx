@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-300   ">
       <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
         <div>
-          <h2 className="text-2xl font-bold text-emerald-500">
+          <h2 className="text-3xl font-bold text-emerald-500">
             Surla Sai Saritha
           </h2>
-          <p className="mt-2 text-sm">
+          <p className="mt-2 text-xl font-bold">
             Aspiring Software Developer
           </p>
         </div>

@@ -1,104 +1,97 @@
+
 import React from "react";
-import { Link } from "react-router-dom";
 import { Github, Linkedin } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import {TypeAnimation} from "react-type-animation"
 
 function Home() {
   return (
- <section
-  className="relative flex flex-col md:flex-row   justify-between 
-             min-h-screen w-full items-start
-             bg-cover bg-center bg-no-repeat px-42 pt-30"
-  style={{
-    backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/bg.jpg')",
-  }}
->
-
+    <section className="flex flex-col w-screen md:flex-row   items-center justify-between min-h-screen px-10 md:px-20 py-16 bg-linear-to-r from-blue-500 to-purple-600 text-white">
       <motion.div
-        initial={{ opacity: 0, x: -80 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="flex flex-col flex-1 gap-3 max-w-5xl">
-        <h1 className="text-4xl font-bold">
-          <div>Hi, I'm</div>
-          <div className="text-black">Surla Sai Saritha</div>
-          <div className="mt-2 text-2xl font-semibold">
-  <TypeAnimation
-    sequence={["Full Stack Python Developer"]}
-    speed={50}
-    repeat={0}
-    className="text-red-500 text-4xl"
-  />
-</div>
-
+        className="flex-1 flex flex-col gap-6"
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-4xl md:text-5xl font-bold ml-52 -mt-28">
+          Hi, I'm <br />
+          <span className="text-black text-4xl">Surla Sai Saritha</span>
         </h1>
 
-        <p className="text-lg leading-relaxed ">
-          A Mechanical Engineering graduate transitioning into software
-          development with strong expertise in Python, Django, and React.
-          Experienced in building responsive web applications, RESTful APIs,
-          and database-driven systems using MySQL and MongoDB.
-        </p>
-        <div className="flex gap-4 mt-6">
-
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="rounded-2xl border-2 border-red-500 p-4 bg-lime-300 font-bold hover:bg-pink-400 transition"
-          >
-            <Link to="/saritha_Resume.pdf" target="_blank">
-              Download CV
-            </Link>
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="rounded-2xl border-2 border-red-500 p-4 bg-lime-300 font-bold hover:bg-pink-400 transition"
-          >
-            <Link to="/projects">See My Projects</Link>
-          </motion.button>
-          <motion.a
-            whileHover={{ y: -5 }}
-            href="https://github.com/Saisarithasurla"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-14 h-14 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition"
-          >
-            <Github size={24} />
-          </motion.a>
-          <motion.a
-            whileHover={{ y: -5 }}
-            href="https://www.linkedin.com/in/surla-sai-saritha-b2736a260/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-14 h-14 bg-blue-600 text-white rounded-full hover:bg-blue-500 transition"
-          >
-            <Linkedin size={24} />
-          </motion.a>
-
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 80 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative flex flex-1 justify-end items-start"
-      >
-        <motion.div
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 4, repeat: Infinity }}
-          className="w-96 h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl"
-        >
-          <img
-            src="/profile.jpeg"
-            alt="Surla Sai Saritha"
-            className="w-full h-full object-cover"
+        <h2 className="text-6xl md:text-3xl font-bold text-red-700 ml-52">
+          <TypeAnimation
+            sequence={[
+              "Full Stack Python Developer",
+              2000,
+            ]}
+            speed={30}
+            wrapper="span"
+            repeat={Infinity}
           />
+        </h2>
+
+        <p className="text-gray-200 max-w-xl ml-52 ">
+          Mechanical Engineering graduate transitioning into a Full Stack Python
+          Developer skilled in Python, Django, and React. Passionate about building
+          responsive web applications and scalable backend systems using modern technologies.
+        </p>
+        <motion.div
+          className="flex flex-wrap gap-4 mt-4 items-center ml-24"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        >
+          <a
+            href="saritha_Resume.pdf"
+            className="bg-red-500 text-white px-5  ml-28 py-2 rounded-lg shadow-md hover:bg-red-600 transition"
+          >
+            Download CV
+          </a>
+          <a
+            href="projects"
+            className="bg-black text-white px-5 py-2 rounded-lg shadow-md hover:bg-gray-900 transition"
+          >
+            See My Projects
+          </a>
+          <a
+            href="https://github.com/Saisarithasurla"
+            className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition"
+          >
+            <Github size={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/surla-sai-saritha-b2736a260/"
+            className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-500 transition"
+          >
+            <Linkedin size={20} />
+          </a>
         </motion.div>
       </motion.div>
+
+<div className="flex-1 flex mt-10 md:mt-0">
+  <motion.img
+    src="profile.jpeg" 
+    alt="Profile"
+    className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-white object-cover"
+    animate={{
+      y: [0, -15, 0], 
+      boxShadow: [
+        "0 0 20px 10px rgba(255,192,203,0.4)",
+        "0 0 40px 20px rgba(255,192,203,0.7)",
+        "0 0 20px 10px rgba(255,192,203,0.4)"
+      ] 
+    }}
+    transition={{
+      duration: 2,
+      repeat: Infinity,
+      repeatType: "loop",
+    }}
+    style={{
+      marginLeft: "100px", 
+      marginTop: "-50px" 
+    }}
+  />
+</div>
 
     </section>
   );
